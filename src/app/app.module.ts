@@ -7,7 +7,6 @@ import {MaterialAppModule} from './ngmaterial.module';
 
 import {AppComponent} from './app.component';
 import {SimulationSetupService} from './service/simulation.setup.service';
-import {TandapaySimulationService} from './service/tandapay.simulation.service';
 import {InputComponent} from './component/input/input.component';
 import {ContentComponent} from './component/content/content.component';
 import {SimulationViewerComponent} from './component/simulation-viewer/simulation.viewer.component';
@@ -32,7 +31,6 @@ import {ScenarioSelectionComponent} from './component/scenario-selection/scenari
   ],
   providers: [
     SimulationSetupService,
-    TandapaySimulationService,
     UnitySimulationService
   ],
   bootstrap: [AppComponent]

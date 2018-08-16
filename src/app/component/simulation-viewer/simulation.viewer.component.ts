@@ -1,6 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {FormControl} from '@angular/forms';
-import {TandapayState} from '../../model/tandapay-state';
 import {UnityState} from '../../model/unity-state';
 
 /**
@@ -12,7 +11,6 @@ import {UnityState} from '../../model/unity-state';
   styleUrls: ['simulation-viewer-component.css'],
 })
 export class SimulationViewerComponent {
-  @Input() tandapaySimulations: TandapayState[];
   @Input() unitySimulations: UnityState[];
   @Output() simulationTabChanged = new EventEmitter<number>();
   tabSelections = [];
